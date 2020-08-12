@@ -18,3 +18,12 @@ C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\Lis
 C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\bin\Debug\ListaEquipamentos.exe.config
 C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\bin\Debug\ListaEquipamentos.exe
 C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\bin\Debug\ListaEquipamentos.pdb
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\bin\Debug\ListaEquipamentos.exe.config
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\bin\Debug\ListaEquipamentos.exe
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\bin\Debug\ListaEquipamentos.pdb
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.Principal.resources
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.Properties.Resources.resources
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.csproj.GenerateResource.cache
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.csproj.CoreCompileInputs.cache
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.exe
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.pdb
