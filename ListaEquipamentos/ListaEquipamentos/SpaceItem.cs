@@ -10,36 +10,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ListaEquipamentos;
 
-namespace SpaceItem
+namespace SpaceItem // espaço da classe item 
 {
 
-    interface IItem
+    interface IItem // interface item com um metodo virtual para gerar id dos itens da lista 
     {
         int GeraID();
     };
-    public class RepositoryItem : IItem
+    public class RepositoryItem : IItem // classe repositorio que implementa o metodo da interface
     {
-        public static int geraid;
+        public static int geraid; // o geraid é statico pois não deve ser criado novo, e sim deve ser unico 
         public int GeraID()
         {
-            geraid++;
-            return geraid;
+            geraid++; // incrementa, isso quer dizer que nunca sera zero 
+            return geraid; // retorna o valor 
         }
     };
-    public class Item:RepositoryItem
+    public class Item:RepositoryItem // a item implementa a classe repositorio, 
     {
         
-        public string name, description; 
-        public int id; 
-        public Item(string name = "Empy", string description = "Description Null!")
+        public string name, description; // um campo para o nome e outro para a descrição, além do id recebido da classe RepositoryItem
+        public int id; // id do objeto que sera recebido pelo metodo GeraID 
+
+        public Item(string name = "Empy", string description = "Description Null!") // optamos por usar argumetnos opcionais para evitar problemas, caso o usuario faça uma ação não planejada, seja ela qual for
         {
-            this.id = GeraID();
-            this.name = name;
-            this.description = description;
+            this.id = GeraID(); // grava o id 
+            this.name = name; // grava o nome 
+            this.description = description; // grava a descrição
         }
-        ~Item(){}
-        
-        
+        ~Item(){} // destrutor, por bom habito 
 
     };
     
