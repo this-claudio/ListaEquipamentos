@@ -27,3 +27,4 @@ C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\Lis
 C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.csproj.CoreCompileInputs.cache
 C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.exe
 C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.pdb
+C:\Users\admlocal\Desktop\Aulas\Programação Orientada a Objetos\Tarefa - 5\ListaEquipamentos\ListaEquipamentos\ListaEquipamentos\obj\Debug\ListaEquipamentos.csprojAssemblyReference.cache

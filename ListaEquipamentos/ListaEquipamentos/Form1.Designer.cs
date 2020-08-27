@@ -29,6 +29,7 @@ namespace ListaEquipamentos
         /// </summary>
         public void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.carregarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +37,12 @@ namespace ListaEquipamentos
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_pesquisa = new System.Windows.Forms.Button();
+            this.texPesquisa = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TexCanto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.texDesc = new System.Windows.Forms.TextBox();
             this.texName = new System.Windows.Forms.TextBox();
@@ -46,12 +53,6 @@ namespace ListaEquipamentos
             this.Nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Lista = new System.Windows.Forms.ListView();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TexCanto = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.texPesquisa = new System.Windows.Forms.TextBox();
-            this.btn_pesquisa = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -126,16 +127,78 @@ namespace ListaEquipamentos
             this.panel1.Controls.Add(this.btn_criar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(505, 24);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(253, 442);
             this.panel1.TabIndex = 1;
+            // 
+            // btn_pesquisa
+            // 
+            this.btn_pesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_pesquisa.Location = new System.Drawing.Point(13, 393);
+            this.btn_pesquisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_pesquisa.Name = "btn_pesquisa";
+            this.btn_pesquisa.Size = new System.Drawing.Size(231, 37);
+            this.btn_pesquisa.TabIndex = 15;
+            this.btn_pesquisa.Text = "Pesquisar";
+            this.btn_pesquisa.UseVisualStyleBackColor = true;
+            this.btn_pesquisa.Click += new System.EventHandler(this.btn_pesquisa_Click);
+            // 
+            // texPesquisa
+            // 
+            this.texPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texPesquisa.Location = new System.Drawing.Point(13, 362);
+            this.texPesquisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.texPesquisa.Name = "texPesquisa";
+            this.texPesquisa.Size = new System.Drawing.Size(231, 23);
+            this.texPesquisa.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 347);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Pequisar na internet:";
+            // 
+            // TexCanto
+            // 
+            this.TexCanto.Location = new System.Drawing.Point(13, 283);
+            this.TexCanto.Multiline = true;
+            this.TexCanto.Name = "TexCanto";
+            this.TexCanto.ReadOnly = true;
+            this.TexCanto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TexCanto.Size = new System.Drawing.Size(231, 61);
+            this.TexCanto.TabIndex = 12;
+            this.TexCanto.Text = "Selecione um item";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 267);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Descrição:";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(13, 224);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(231, 37);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Text = "Modificar";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Location = new System.Drawing.Point(13, 183);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(231, 37);
             this.btnDelete.TabIndex = 9;
@@ -147,7 +210,7 @@ namespace ListaEquipamentos
             // 
             this.texDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.texDesc.Location = new System.Drawing.Point(13, 64);
-            this.texDesc.Margin = new System.Windows.Forms.Padding(2);
+            this.texDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texDesc.Multiline = true;
             this.texDesc.Name = "texDesc";
             this.texDesc.Size = new System.Drawing.Size(231, 74);
@@ -157,7 +220,7 @@ namespace ListaEquipamentos
             // 
             this.texName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.texName.Location = new System.Drawing.Point(59, 10);
-            this.texName.Margin = new System.Windows.Forms.Padding(2);
+            this.texName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texName.Name = "texName";
             this.texName.Size = new System.Drawing.Size(185, 23);
             this.texName.TabIndex = 6;
@@ -188,7 +251,7 @@ namespace ListaEquipamentos
             // 
             this.btn_criar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_criar.Location = new System.Drawing.Point(13, 142);
-            this.btn_criar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_criar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_criar.Name = "btn_criar";
             this.btn_criar.Size = new System.Drawing.Size(231, 37);
             this.btn_criar.TabIndex = 0;
@@ -221,75 +284,13 @@ namespace ListaEquipamentos
             this.Lista.GridLines = true;
             this.Lista.HideSelection = false;
             this.Lista.Location = new System.Drawing.Point(0, 24);
-            this.Lista.Margin = new System.Windows.Forms.Padding(2);
+            this.Lista.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Lista.Name = "Lista";
             this.Lista.Size = new System.Drawing.Size(505, 442);
             this.Lista.TabIndex = 12;
             this.Lista.UseCompatibleStateImageBehavior = false;
             this.Lista.View = System.Windows.Forms.View.Details;
             this.Lista.SelectedIndexChanged += new System.EventHandler(this.Lista_SelectedIndexChanged);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(13, 224);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(231, 37);
-            this.btnUpdate.TabIndex = 10;
-            this.btnUpdate.Text = "Modificar";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 267);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Descrição:";
-            // 
-            // TexCanto
-            // 
-            this.TexCanto.Location = new System.Drawing.Point(13, 283);
-            this.TexCanto.Multiline = true;
-            this.TexCanto.Name = "TexCanto";
-            this.TexCanto.ReadOnly = true;
-            this.TexCanto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TexCanto.Size = new System.Drawing.Size(231, 61);
-            this.TexCanto.TabIndex = 12;
-            this.TexCanto.Text = "Selecione um item";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 347);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Pequisar na internet:";
-            // 
-            // texPesquisa
-            // 
-            this.texPesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.texPesquisa.Location = new System.Drawing.Point(13, 362);
-            this.texPesquisa.Margin = new System.Windows.Forms.Padding(2);
-            this.texPesquisa.Name = "texPesquisa";
-            this.texPesquisa.Size = new System.Drawing.Size(231, 23);
-            this.texPesquisa.TabIndex = 14;
-            // 
-            // btn_pesquisa
-            // 
-            this.btn_pesquisa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pesquisa.Location = new System.Drawing.Point(13, 393);
-            this.btn_pesquisa.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_pesquisa.Name = "btn_pesquisa";
-            this.btn_pesquisa.Size = new System.Drawing.Size(231, 37);
-            this.btn_pesquisa.TabIndex = 15;
-            this.btn_pesquisa.Text = "Pesquisar";
-            this.btn_pesquisa.UseVisualStyleBackColor = true;
-            this.btn_pesquisa.Click += new System.EventHandler(this.btn_pesquisa_Click);
             // 
             // Principal
             // 
@@ -299,10 +300,11 @@ namespace ListaEquipamentos
             this.Controls.Add(this.Lista);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Principal";
-            this.Text = "Lista de Equipamentos";
+            this.Text = "Lista de Itens";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
